@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deathnote Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1><img src="annn.png" alt="Deathnote Timer" id="headerGif"></h1>
+    
+    <!-- Set the form action to the Flask route that processes the form data -->
+    <form id="deathnoteForm" action="/process_data" method="POST">
+        <label for="name">
+            <img src="name.png" alt="Name" id="inputImage">
+            <input type="text" id="name" name="name" required>
+        </label><br><br>
+        
+        <label for="age">
+            <img src="age.png" alt="Age" id="inputImage">
+            <input type="number" id="age" name="age" required>
+        </label><br><br>
+        
+        <label for="dob">
+            <img src="dob.png" alt="DOB" id="inputImage">
+            <input type="date" id="dob" name="dob" required>
+        </label><br><br>
+        
+        <input type="submit" value="START COUNTDOWN">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
